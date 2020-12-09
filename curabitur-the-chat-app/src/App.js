@@ -1,13 +1,17 @@
 import './App.css';
+import Header from './Header/Header';
+import SideBar from "./SideBar/SideBar";
 
 function App() {
   return (
     <div className="app">
-      <h1>Hello Clever Programmer, Lets build Curabitur</h1>
 
-      {/* Header */}
-      {/* Sidebar */}
-      {/* React Router - Chat Screen */}
+      <Header />
+      
+      <div className="app_body">
+        <SideBar />
+        {/* React Router - Chat Screen */}
+      </div>
     </div>
   );
 }
