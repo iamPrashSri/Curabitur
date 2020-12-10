@@ -1,0 +1,22 @@
+.chatMessage {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.chatMessage > img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    border-radius: 999px;
+}
+
+.chatMessage__timestamp {
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.chatMessage__info {
+    padding-left: 10px;
+}

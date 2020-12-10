@@ -1,0 +1,30 @@
+.sideBarOption {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.sideBarOption:hover {
+    opacity: 0.9;   /* To make the hover background color standout */
+    background-color: #340e36;
+}
+
+.sideBarOption__icon {
+    padding: 10px;
+    font-size: 15px !important;  /* important because of overriding material UI icon css */
+}
+
+.sideBarOption__channel {
+    padding: 10px 0;
+}
+
+.sideBarOption__hash {
+    padding: 10px;
+    font-size: 15px !important;
+}
+
+.sideBarOption > h3 {
+    font-weight: 500;
+}
