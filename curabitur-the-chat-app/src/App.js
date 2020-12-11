@@ -4,16 +4,18 @@ import SideBar from "./SideBar/SideBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Chat from './Chat/Chat';
 import { useState } from 'react';
+import Login from './Login/Login';
+import { useStateValue } from './DataLayerConfig/StateProvider';
 
 function App() {
 
-  let [user, setUser] = useState(null);
-  
+  let [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="app">
       <Router>
         {!user ? (
-          <h1>Show Login Page</h1>
+          <Login />
         ) : (
           <>
           <Header />  

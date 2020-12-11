@@ -14,8 +14,10 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
 import db from '../Hosting/Firebase';
+import { useStateValue } from '../DataLayerConfig/StateProvider';
 
 function SideBar() {
+    let [{ user }] = useStateValue();
     const [channels, setChannels] = useState([]);
 
     // Run it only when SideBar component loads.
@@ -38,7 +40,7 @@ function SideBar() {
                     <h2>Some Demo Channel</h2>
                     <h3>
                         <FiberManualRecordIcon />
-                        Prashant Srivastava
+                        {user?.displayName}
                     </h3>
                 </div>
                 <CreateIcon />
